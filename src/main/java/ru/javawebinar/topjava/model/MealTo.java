@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MealTo {
+    private Integer id;
+
     private final LocalDateTime dateTime;
 
     private final String description;
@@ -14,11 +16,16 @@ public class MealTo {
 
     private final boolean excess;
 
-    public MealTo(LocalDateTime dateTime, String description, int calories, boolean excess) {
+    public MealTo(Integer id, LocalDateTime dateTime, String description, int calories, boolean excess) {
+        this.id = id;
         this.dateTime = dateTime;
         this.description = description;
         this.calories = calories;
         this.excess = excess;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public LocalDateTime getDateTime() {
@@ -35,21 +42,6 @@ public class MealTo {
 
     public boolean isExcess() {
         return excess;
-    }
-
-    private static final int caloriesPerDay=2000;
-
-    public static List<MealTo> listMealTo;
-
-    static {
-        listMealTo = new ArrayList<>();
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 30, 10, 0), "Завтрак", 500, true));
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 30, 13, 0), "Обед", 1000, false));
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 30, 20, 0), "Ужин", 500, true));
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 31, 0, 0), "Еда на граничное значение", 100, false));
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 31, 10, 0), "Завтрак", 1000, true));
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 31, 13, 0), "Обед", 500, false));
-        listMealTo.add(new MealTo(LocalDateTime.of(2020, Month.JANUARY, 31, 20, 0), "Ужин", 410, true));
     }
 
 
