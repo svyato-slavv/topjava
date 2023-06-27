@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/72fe7a5931554257877fb6d7e7ccbbbe)](https://app.codacy.com/gh/svyato-slavv/topjava?utm_source=github.com&utm_medium=referral&utm_content=svyato-slavv/topjava&utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ba936508cf7247818a33384829e40565)](https://app.codacy.com/gh/svyato-slavv/topjava/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 Java Enterprise Online Project 
